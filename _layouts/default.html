@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ page.lang }}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag }} {% endfor %}" />
+  <meta name="description" content="{{ page.title }}" />
+  {% if page.root == "" %}
+  <link rel="alternate" href="http://vanpak.ch/en/{{ page.path }}" hreflang="en" />
+  {% endif %}{% if page.root == "en/" %}
+  <link rel="alternate" href="http://vanpak.ch/{{ page.path }}" hreflang="de" />
+  {% endif %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+  <link rel="stylesheet" href="/css/default.css" /> {% for css in page.css %}
+  <link rel="stylesheet" href="/css/{{css}}.css" /> {% endfor %}
+  <!--<link rel="stylesheet" href="/css/debug.css" />-->
+  <!--<link rel="stylesheet" href="/css/diagnostic.css" />-->
+  <title>{{ page.head-title }}</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>{{ page.title}}</h1>
+      <nav>
+        <h2>Site content navigation</h2>
+        <ul>
+          {% if page.path != "" %}
+          <li>
+            <a href="/{{page.root}}" title="Return to the home page">Home</a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+      <nav>
+        <h2>Site language navigation</h2>
+        <ul>
+          {% if page.root == "" %}
+          <li class="selected">
+            <a class="lang" href="/{{ page.path }}" title="Deutsch">de</a>
+          </li>
+          <li>
+            <a class="lang" href="/en/{{ page.path }}" title="English">en</a>
+          </li>
+          {% endif %}{% if page.root == "en/" %}
+          <li>
+            <a class="lang" href="/{{ page.path }}" title="Deutsch">de</a>
+          </li>
+          <li class="selected">
+            <a class="lang" href="/en/{{ page.path }}" title="English">en</a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+{{ content }}  </main>
+  <footer>
+    <div class="container">
+      <a href="#" title="Go to the top of this page">Go to top</a>
+      <p>Copyright (c) 2016 Vanja Pakaski. All rights reserved.</p>
+    <div>
+  </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87114475-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

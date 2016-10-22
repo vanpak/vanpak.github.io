@@ -1,0 +1,251 @@
+.sticker {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+}
+
+#nav-page {
+  padding-top: 16px;
+}
+
+#nav-page ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-page li {
+  display: block;
+}
+
+#nav-page a {
+  font-size: 19px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 11px;
+  margin-bottom: 16px;
+}
+
+#nav-page a:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #333;
+}
+
+#nav-page a:hover, #nav-page a:focus {
+  text-decoration: none;
+}
+
+#nav-page a:hover:after, #nav-page a:focus:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid white;
+}
+
+@media all and (min-width:768px) {
+  #nav-page {
+    padding-bottom: 108px;
+  }
+  #nav-page li {
+    display: inline-block;
+    width: 170px;
+  }
+}
+
+#header-page {
+  margin-top: 24px;
+}
+
+#header-page h2 {
+  margin-bottom: 10px;
+}
+
+#header-page #to-go > h2:first-child {
+  display: none;
+}
+
+#header-page #sticker {
+  float: right;
+  position: relative;
+  top: -202px;
+  right: 1px;
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  background: #333;
+  color: white;
+  font-family: 'LinguisticsProRegular', serif;
+  font-size: 22px;
+  text-transform: lowercase;
+}
+
+#header-page #sticker > span {
+  display: block;
+  position: relative;
+  left: 38px;
+  top: 13px;
+  width: fit-content;
+}
+
+#header-page #sticker span#sticker-and {
+  font-size: 63px;
+  position: relative;
+  left: -6px;
+  top: 30px;
+}
+
+#header-page #sticker span#sticker-layout {
+  top: -9px;
+}
+
+#header-page #sticker span#sticker-to-go {
+  top: -17px;
+}
+
+#header-page #sticker span#sticker-to-go-go {
+  font-weight: bolder;
+}
+
+#header-page #title {
+  font-family: 'LinguisticsProRegular', serif;
+  text-transform: lowercase;
+  font-size: 24vw;
+  height: 34vw;
+  margin-bottom: 14vw;
+}
+
+#header-page #title > span {
+  position: absolute;
+}
+
+#header-page #title #vanpak-n {
+  letter-spacing: -4px;
+}
+
+#header-page #title #vanpak-p {
+  letter-spacing: -5.25px;
+}
+
+#header-page span.block {
+  display: block;
+}
+
+@media all and (min-width:534px) {
+  #header-page #title {
+    font-size: 128px;
+    height: 182.5px;
+  }
+}
+
+@media all and (min-width:768px) {
+  #header-page #title {
+    position: relative;
+    margin-bottom: 88px;
+  }
+  #header-page section {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+#design {
+  font-size: 0px;
+}
+
+#design p {
+  font-size: initial;
+}
+
+#design figure {
+  display: inline-block;
+  max-width: 280px;
+  text-align: center;
+}
+
+#design figure figcaption {
+  font-size: 15px;
+  text-transform: none;
+  margin-top: 15px;
+  margin-bottom: 4.75px;
+}
+
+#design figure img {
+  width: 100%;
+}
+
+#design img#design-kuoni-elsewhere {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+}
+
+#design img#design-the-communication-butler {
+  border-bottom: 1px solid whitesmoke;
+}
+
+#design img#design-kuoni-annabelle {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+}
+
+#design img#design-helvetic-tours {
+  border-top: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+}
+
+@media all and (max-width:1199px) {
+  #design img#design-the-communication-butler {
+    border-right: 1px solid whitesmoke;
+  }
+  #design img#design-helvetic-tours {
+    border-right: 1px solid whitesmoke;
+    border-left: none;
+  }
+}
+
+@media all and (max-width:991px) {
+  #design img#design-helvetic-tours {
+    border-right: none;
+    border-left: 1px solid whitesmoke;
+  }
+}
+
+@media all and (max-width:589px) {
+  #design img#design-kuoni-elsewhere {
+    border-right: 1px solid whitesmoke;
+  }
+  #design img#design-the-communication-butler {
+    border-left: 1px solid whitesmoke;
+  }
+  #design img#design-kuoni-annabelle {
+    border-right: 1px solid whitesmoke;
+  }
+  #design img#design-helvetic-tours {
+    border-right: 1px solid whitesmoke;
+  }
+}
+
+#about #portrait {
+  position: relative;
+  float: right;
+  top: -84px;
+  margin-bottom: -64px;
+  margin-left: 20px;
+}
+
+#about > p:first-of-type {
+  clear: right;
+}
+
+@media all and (min-width:481px) {
+  #about > p:first-of-type {
+    clear: none;
+  }
+}

@@ -1,0 +1,62 @@
+section.examples img {
+  width: 100%;
+  max-width: 280px;
+}
+
+section.examples a + p {
+  margin-top: 48px;
+}
+
+section.examples p.industry, section.examples p.project {
+  font-weight: bolder;
+}
+
+section.examples img {
+  display: block;
+  margin-bottom: 60px;
+}
+
+section.examples img.layout-white {
+  border: 1px solid whitesmoke;
+}
+
+section.examples a.img-external {
+  display: block;
+  width: fit-content;
+  position: relative;
+  padding-bottom: 26px;
+  margin-bottom: 60px;
+}
+
+section.examples a.img-external:after {
+  content: attr(title);
+  position: absolute;
+  bottom: 0px;
+  font-size: 12px;
+}
+
+section.examples a.img-external img {
+  margin-bottom: 0px;
+}
+
+@media all and (max-width:767px) {
+  section.examples p {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media all and (min-width:768px) {
+  section.examples p {
+    float: right;
+    padding-left: 20px;
+  }
+  section.examples p.industry {
+    float: none;
+    width: 100%;
+    padding-left: 0px;
+  }
+  section.examples a + p {
+    margin-top: 0px;
+  }
+}
