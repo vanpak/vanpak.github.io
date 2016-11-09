@@ -65,6 +65,10 @@ main nav a:hover:after, main nav a:focus:after {
   margin-top: 24px;
 }
 
+#intro > h2 {
+  display: none;
+}
+
 @media all and (min-width:768px) {
   #intro section {
     display: inline-block;
@@ -80,7 +84,7 @@ main nav a:hover:after, main nav a:focus:after {
   display: block;
 }
 
-#intro-to-go h2 {
+#intro aside h3 {
   display: none;
 }
 
@@ -126,7 +130,7 @@ main nav a:hover:after, main nav a:focus:after {
   font-weight: bolder;
 }
 
-#intro-title {
+#intro-logo {
   font-family: 'LinguisticsProRegular', serif;
   text-transform: lowercase;
   font-size: 24vw;
@@ -135,20 +139,20 @@ main nav a:hover:after, main nav a:focus:after {
 }
 
 @media all and (min-width:534px) {
-  #intro-title {
+  #intro-logo {
     font-size: 128px;
     height: 182.5px;
   }
 }
 
 @media all and (min-width:768px) {
-  #intro-title {
+  #intro-logo {
     position: relative;
-    margin-bottom: 88px;
+    margin-bottom: 108px;
   }
 }
 
-#intro-title > span {
+#intro-logo > span {
   position: absolute;
 }
 
