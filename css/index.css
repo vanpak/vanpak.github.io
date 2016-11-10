@@ -268,3 +268,7 @@ main nav a:hover:after, main nav a:focus:after {
   margin-bottom: -64px;
   margin-left: 20px;
 }
+
+#contact {
+  margin-bottom: 50vh;
+}
