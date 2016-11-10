@@ -28,7 +28,11 @@
       <nav>
         <h2>Site navigation</h2>
         <ul>
-          {% if page.path != "" %}
+          {% if page.path == "" %}
+          <li class="no-op">
+            <a href="/{{page.root}}" title="Return to the home page">Home</a>
+          </li>
+          {% else %}
           <li>
             <a href="/{{page.root}}" title="Return to the home page">Home</a>
           </li>
