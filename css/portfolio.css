@@ -1,62 +1,65 @@
-section.examples img {
+main section > section {
+  margin-bottom: 144px;
+}
+
+main div {
+  display: block;
+}
+
+main img {
   width: 100%;
   max-width: 280px;
 }
 
-section.examples a + p {
-  margin-top: 48px;
-}
-
-section.examples p.industry, section.examples p.project {
-  font-weight: bolder;
-}
-
-section.examples img {
-  display: block;
-  margin-bottom: 60px;
-}
-
-section.examples img.layout-white {
+main img.layout-white {
   border: 1px solid whitesmoke;
 }
 
-section.examples a.img-external {
+main p {
+  line-height: 19px;
+}
+
+main p + a {
+  margin-top: 10px;
+}
+
+main p.branch {
+  letter-spacing: 2px;
+  font-size: 17px;
+  line-height: normal;
+}
+
+main p.project {
+  line-height: normal;
+}
+
+main a {
   display: block;
   width: fit-content;
   position: relative;
   padding-bottom: 26px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
-section.examples a.img-external:after {
+main a:after {
   content: attr(title);
   position: absolute;
   bottom: 0px;
   font-size: 12px;
 }
 
-section.examples a.img-external img {
-  margin-bottom: 0px;
+main a:hover:after, a:focus:after {
+  text-decoration: underline;
 }
 
-@media all and (max-width:767px) {
-  section.examples p {
-    width: 100%;
-    max-width: 280px;
-  }
+main a + p {
+  margin-top: 60px;
 }
 
-@media all and (min-width:768px) {
-  section.examples p {
-    float: right;
-    padding-left: 20px;
-  }
-  section.examples p.industry {
-    float: none;
-    width: 100%;
-    padding-left: 0px;
-  }
-  section.examples a + p {
-    margin-top: 0px;
+@media all and (min-width:992px) {
+  main a {
+    display: inline-block;
+    margin-right: 20px;
   }
 }
