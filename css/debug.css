@@ -22,9 +22,3 @@ span {
   outline: 1px salmon solid;
   background: lightsalmon;
 }
-
-figure {
-  outline: 1px purple solid;
-  background: mediumpurple;
-  opacity: 0.75;
-}

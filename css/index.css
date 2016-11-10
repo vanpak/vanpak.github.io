@@ -181,20 +181,20 @@ main nav a:hover:after, main nav a:focus:after {
   font-size: 0px;
 }
 
-#design figure {
+#design div {
   display: inline-block;
   max-width: 280px;
   text-align: center;
 }
 
-#design figure figcaption {
+#design div p {
   font-size: 15px;
   text-transform: none;
   margin-top: 15px;
   margin-bottom: 4.75px;
 }
 
-#design figure img {
+#design div img {
   width: 100%;
 }
 
