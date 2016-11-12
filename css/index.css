@@ -61,25 +61,48 @@ main nav a:hover:after, main nav a:focus:after {
   border-radius: 50%;
 }
 
+
+/*intro*/
+
 #intro {
   margin-top: 24px;
-  margin-bottom: -58px;
+  margin-bottom: 24px;
+}
+
+#intro-logo {
+  font-family: 'LinguisticsProRegular', serif;
+  text-transform: lowercase;
+  font-size: 76px;
 }
 
 @media all and (min-width:481px) {
   #intro {
-    margin-bottom: 128px;
+    margin-bottom: 48px;
+  }
+  #intro-logo {
+    font-size: 128px;
   }
 }
 
-#intro > h2 {
-  display: none;
+@media all and (min-width:768px) {
+  #intro {
+    margin-bottom: 138px;
+  }
+}
+
+#intro-vanpak-n {
+  letter-spacing: -4px;
+}
+
+#intro-vanpak-p {
+  letter-spacing: -5.25px;
 }
 
 #intro-sticker {
   float: right;
   position: relative;
-  top: -202px;
+  top: -321px;
+  margin-bottom: -321px;
   right: 1px;
   transform: rotate(10deg);
   -ms-transform: rotate(10deg);
@@ -89,6 +112,13 @@ main nav a:hover:after, main nav a:focus:after {
   font-family: 'LinguisticsProRegular', serif;
   font-size: 22px;
   text-transform: lowercase;
+}
+
+@media all and (min-width:481px) {
+  #intro-sticker {
+    top: -395px;
+    margin-bottom: -395px;
+  }
 }
 
 #intro-sticker > span {
@@ -118,38 +148,8 @@ main nav a:hover:after, main nav a:focus:after {
   font-weight: bolder;
 }
 
-#intro-logo {
-  position: absolute;
-  font-family: 'LinguisticsProRegular', serif;
-  text-transform: lowercase;
-  font-size: 76px;
-  height: 110px;
-}
 
-@media all and (min-width:481px) {
-  #intro-logo {
-    font-size: 128px;
-    height: 182.5px;
-  }
-}
-
-@media all and (min-width:768px) {
-  #intro-logo {
-    position: relative;
-  }
-}
-
-#intro-logo > span {
-  position: absolute;
-}
-
-#intro-vanpak-n {
-  letter-spacing: -4px;
-}
-
-#intro-vanpak-p {
-  letter-spacing: -5.25px;
-}
+/*intro-sections*/
 
 @media all and (min-width:768px) {
   #intro-sections section {
@@ -158,13 +158,16 @@ main nav a:hover:after, main nav a:focus:after {
   }
 }
 
-#intro-sections section h2 {
+#intro-sections h2 {
   margin-bottom: 10px;
 }
 
-#intro-sections section span {
+#intro-sections span {
   display: block;
 }
+
+
+/*design*/
 
 #design {
   font-size: 0px;
@@ -240,6 +243,9 @@ main nav a:hover:after, main nav a:focus:after {
   }
 }
 
+
+/*about*/
+
 #about > p:first-of-type {
   clear: right;
 }
@@ -257,6 +263,9 @@ main nav a:hover:after, main nav a:focus:after {
   margin-bottom: -64px;
   margin-left: 20px;
 }
+
+
+/*contact*/
 
 #contact {
   margin-bottom: 50vh;
