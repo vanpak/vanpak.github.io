@@ -63,45 +63,20 @@ main nav a:hover:after, main nav a:focus:after {
 
 #intro {
   margin-top: 24px;
+  margin-bottom: -58px;
+}
+
+@media all and (min-width:481px) {
+  #intro {
+    margin-bottom: 128px;
+  }
 }
 
 #intro > h2 {
   display: none;
 }
 
-#intro section:first-of-type {
-  margin-top: 164px;
-}
-
-@media all and (min-width:481px) {
-  #intro section:first-of-type {
-    margin-top: 350px;
-  }
-}
-
-@media all and (min-width:768px) {
-  #intro section {
-    display: inline-block;
-    width: 33%;
-  }
-  #intro section:first-of-type {
-    margin-top: 40px;
-  }
-}
-
-#intro section h2 {
-  margin-bottom: 10px;
-}
-
-#intro section span {
-  display: block;
-}
-
-#intro aside h3 {
-  display: none;
-}
-
-#intro-sticker  p {
+#intro-sticker {
   float: right;
   position: relative;
   top: -202px;
@@ -116,7 +91,7 @@ main nav a:hover:after, main nav a:focus:after {
   text-transform: lowercase;
 }
 
-#intro-sticker p > span {
+#intro-sticker > span {
   display: block;
   position: relative;
   left: 38px;
@@ -124,11 +99,11 @@ main nav a:hover:after, main nav a:focus:after {
   width: fit-content;
 }
 
-#intro-sticker p > span#intro-sticker-layout {
+#intro-sticker > span#intro-sticker-layout {
   top: -9px;
 }
 
-#intro-sticker p > span#intro-sticker-to-go {
+#intro-sticker > span#intro-sticker-to-go {
   top: -17px;
 }
 
@@ -161,7 +136,6 @@ main nav a:hover:after, main nav a:focus:after {
 @media all and (min-width:768px) {
   #intro-logo {
     position: relative;
-    margin-bottom: 108px;
   }
 }
 
@@ -175,6 +149,21 @@ main nav a:hover:after, main nav a:focus:after {
 
 #intro-vanpak-p {
   letter-spacing: -5.25px;
+}
+
+@media all and (min-width:768px) {
+  #intro-sections section {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+#intro-sections section h2 {
+  margin-bottom: 10px;
+}
+
+#intro-sections section span {
+  display: block;
 }
 
 #design {
