@@ -71,7 +71,6 @@ main nav a:hover:after, main nav a:focus:after {
 
 #intro-logo {
   font-family: 'LinguisticsProRegular', serif;
-  text-transform: lowercase;
   font-size: 76px;
 }
 

@@ -29,23 +29,26 @@
   <meta name="apple-mobile-web-app-title" content="vanpak">
   <meta name="application-name" content="vanpak">
   <meta name="theme-color" content="#ffffff">
-  <!-- crawlers -->
-  <meta content="vanpak" itemprop="name">
-  <meta content="{{ page.title}}" property="og:title">
-  <meta content="website" property="og:type">
-  <meta content="{{ page.description }}" itemprop="description">
-  <meta content="{{ page.description }}" property="og:description">
-  <meta content="http://vanpak.ch/android-chrome-512x512.png" itemprop="image">
-  <meta content="http://vanpak.ch/android-chrome-512x512.png" property="og:image">
-  <meta content="image/png" property="og:image:type">
-  <meta content="http://vanpak.ch/" itemprop="url">
-  <meta content="http://vanpak.ch/" property="og:url">
-  <meta content="{{ page.og-locale }}" property="og:locale">
-  <meta content="{{ page.og-locale-alternate }}" property="og:locale:alternate">
-  <meta content="vanpak" property="og:site_name">
+  <!-- microdata -->
+  <meta itemprop="name" content="vanpak">
+  <meta itemprop="description" content="{{ page.description }}">
+  <meta itemprop="image" content="http://vanpak.ch/android-chrome-512x512.png">
+  <meta itemprop="url" content="http://vanpak.ch/">
+  <!-- open graph -->
+  <meta property="og:url" content="http://vanpak.ch/">
+  {% if page.path == "" %}
+  <meta property="og:title" content="{{ page.title}}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://vanpak.ch/android-chrome-512x512.png">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:locale" content="{{ page.og-locale }}">
+  <meta property="og:locale:alternate" content="{{ page.og-locale-alternate }}">
+  {% endif %}
+  <!-- misc -->
   <link rel="author" href="humans.txt" />
   <!-- content -->
-  <title>{{ page.head-title }}</title>
+  <title>{{ page.title }}</title>
 </head>
 
 <body>
