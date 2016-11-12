@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'LinguisticsProRegular';
-  src: url('/fonts/LinguisticsProRegular.otf') format('opentype');
+  font-family: 'LinguisticsPro-Italic';
+  src: url('/fonts/LinguisticsPro-Italic.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -11,50 +11,7 @@ body {
 }
 
 body > header {
-  font-size: 14px;
   margin-bottom: 24px;
-}
-
-body > header h1 {
-  display: none;
-}
-
-body > header nav:last-of-type {
-  float: right;
-}
-
-body > header nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-body > header nav ul li {
-  float: left;
-}
-
-body > header nav ul li:not(:last-child) {
-  margin-right: 20px;
-}
-
-body > header nav ul li.selected a {
-  text-decoration: underline;
-  cursor: default;
-}
-
-body > main > section {
-  margin-top: 288px;
-  margin-bottom: 288px;
-}
-
-body > footer {
-  font-size: 10px;
-}
-
-body > footer p:last-of-type {
-  float: right;
-  margin: 0px;
-  width: fit-content;
 }
 
 body > header .container, body > footer .container {
@@ -68,27 +25,74 @@ body > header .container a, body > header .container a:hover, body > header .con
   color: white;
 }
 
-nav > h2:first-child {
+nav > h2 {
   display: none;
 }
 
-nav ul li.no-op {
-  display: none;
+nav#nav-languages {
+  font-size: 14px;
+  float: right;
 }
 
-nav ul li a {
+nav#nav-languages ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav#nav-languages li {
+  float: left;
+}
+
+nav#nav-languages li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+nav#nav-languages a > abbr {
+  border-bottom: none;
+  cursor: inherit;
+}
+
+body > footer {
+  font-size: 10px;
+}
+
+body > footer p#p-copyright {
+  float: right;
+  margin: 0px;
+  width: fit-content;
+}
+
+main > section {
+  margin-top: 288px;
+  margin-bottom: 288px;
+}
+
+main nav {
+  float: left;
+  display: block;
+  margin-top: 16px;
+}
+
+main nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+main nav li {
+  margin-bottom: 16px;
+}
+
+main nav a {
+  display: inline-block;
+  font-size: 19px;
+  position: relative;
+  padding-bottom: 11px;
   text-transform: lowercase;
 }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 24px;
-  position: relative;
-  padding-bottom: 11px;
-  margin-bottom: 27px;
-}
-
-h2:after {
+main nav a:after {
   content: "";
   position: absolute;
   width: 20px;
@@ -97,7 +101,45 @@ h2:after {
   border-bottom: 2px solid #333;
 }
 
-h3 {
+main nav a:hover, main nav a:focus {
+  text-decoration: none;
+}
+
+main nav a:hover:after, main nav a:focus:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid white;
+}
+
+main p {
+  max-width: 600px;
+}
+
+main a:link, main a:visited, main a:hover, main a:active, main a:focus {
+  color: #333;
+}
+
+main h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  padding-bottom: 11px;
+  margin-bottom: 27px;
+}
+
+main h2:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #333;
+}
+
+main h3 {
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 19px;
@@ -105,20 +147,84 @@ h3 {
   margin-bottom: 27px;
 }
 
-h4 {
+main h4 {
   margin-top: 27px;
   text-transform: uppercase;
   font-size: 19px;
 }
 
-p {
-  max-width: 600px;
+main dl {
+  display: block;
+  width: 66%;
 }
 
-a, a:hover, a:focus {
-  color: #333;
+main dl::before {
+  content: " ";
+  display: table;
 }
 
-a.lang {
+main dl::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+main dt {
+  float: left;
+  width: 20%;
+}
+
+main dd {
+  float: left;
+  width: 80%;
+}
+
+main dt:not(:last-of-type), dd:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+main a.top-of-page {
+  display: block;
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+main a.top-of-page::before {
+  content: "[ ";
+  display: inline;
+}
+
+main a.top-of-page::after {
+  content: " ]";
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+}
+
+abbr.lang-code {
   text-transform: uppercase;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }

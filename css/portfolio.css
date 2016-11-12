@@ -1,39 +1,29 @@
-main section > section {
+main > section > section:not(:last-of-type) {
   margin-bottom: 144px;
 }
 
-main div {
-  display: block;
-}
-
-main img {
+main section img {
   width: 100%;
   max-width: 280px;
 }
 
-main img.layout-white {
+main section img.layout-white {
   border: 1px solid whitesmoke;
 }
 
-main p {
+main section p {
   line-height: 19px;
 }
 
-main p + a {
+main section a + p, main section a + dl {
+  margin-top: 60px;
+}
+
+main section p + a {
   margin-top: 10px;
 }
 
-main p.branch {
-  letter-spacing: 2px;
-  font-size: 17px;
-  line-height: normal;
-}
-
-main p.project {
-  line-height: normal;
-}
-
-main a {
+a.portofolio-item {
   display: block;
   width: fit-content;
   position: relative;
@@ -42,24 +32,13 @@ main a {
   margin-bottom: 60px;
 }
 
-main a:after {
+a.portofolio-item:after {
   content: attr(title);
   position: absolute;
   bottom: 0px;
   font-size: 12px;
 }
 
-main a:hover:after, a:focus:after {
+a.portofolio-item:hover:after, a.portofolio-item:focus:after {
   text-decoration: underline;
-}
-
-main a + p {
-  margin-top: 60px;
-}
-
-@media all and (min-width:992px) {
-  main a {
-    display: inline-block;
-    margin-right: 20px;
-  }
 }

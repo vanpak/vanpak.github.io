@@ -1,192 +1,111 @@
-main nav {
-  padding-top: 16px;
-}
-
-@media all and (min-width:768px) {
-  main nav {
-    padding-bottom: 108px;
-  }
-}
-
-main nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-main nav li {
+img#img-logo-graphic-and-layout-to-go {
   display: block;
-  margin-bottom: 16px;
+  float: right;
+  width: 150px;
+}
+
+img#img-logo {
+  width: 192px;
+}
+
+@media all and (min-width:480px) {
+  main nav li {
+    display: inline-block;
+    width: 90px;
+  }
+  img#img-logo-graphic-and-layout-to-go {
+    width: 150px;
+  }
 }
 
 @media all and (min-width:768px) {
   main nav li {
-    display: inline-block;
-    width: 170px;
+    width: 150px;
+  }
+  img#img-logo-graphic-and-layout-to-go {
+    width: 200px;
+  }
+  img#img-logo {
+    width: 256px;
   }
 }
 
-main nav a {
-  font-size: 19px;
-  display: inline-block;
-  position: relative;
-  padding-bottom: 11px;
-}
-
-main nav a:after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  bottom: 0;
-  left: 0;
-  border-bottom: 2px solid #333;
-}
-
-main nav a:hover, main nav a:focus {
-  text-decoration: none;
-}
-
-main nav a:hover:after, main nav a:focus:after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  bottom: 0;
-  left: 0;
-  border-bottom: 2px solid white;
-}
-
-.sticker {
-  width: 192px;
-  height: 192px;
-  border-radius: 50%;
+@media all and (min-width:992px) {
+  main nav li {
+    width: 150px;
+  }
 }
 
 
-/*intro*/
+/*services*/
 
-#intro {
+
+#services {
   margin-top: 24px;
   margin-bottom: 24px;
 }
 
-#intro-logo {
-  font-family: 'LinguisticsProRegular', serif;
-  font-size: 76px;
-}
-
 @media all and (min-width:481px) {
-  #intro {
+  #services {
     margin-bottom: 48px;
-  }
-  #intro-logo {
-    font-size: 128px;
   }
 }
 
 @media all and (min-width:768px) {
-  #intro {
+  #services {
     margin-bottom: 138px;
   }
 }
 
-#intro-vanpak-n {
-  letter-spacing: -4px;
-}
 
-#intro-vanpak-p {
-  letter-spacing: -5.25px;
-}
+/*services-sections*/
 
-#intro-sticker {
-  float: right;
-  position: relative;
-  top: -321px;
-  margin-bottom: -321px;
-  right: 1px;
-  transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-  background: #333;
-  color: white;
-  font-family: 'LinguisticsProRegular', serif;
-  font-size: 22px;
-  text-transform: lowercase;
-}
 
 @media all and (min-width:481px) {
-  #intro-sticker {
-    top: -395px;
-    margin-bottom: -395px;
-  }
-}
-
-#intro-sticker > span {
-  display: block;
-  position: relative;
-  left: 38px;
-  top: 13px;
-  width: fit-content;
-}
-
-#intro-sticker > span#intro-sticker-layout {
-  top: -9px;
-}
-
-#intro-sticker > span#intro-sticker-to-go {
-  top: -17px;
-}
-
-#intro-sticker-and {
-  font-size: 63px;
-  position: relative;
-  left: -6px;
-  top: 30px;
-}
-
-#intro-sticker-go {
-  font-weight: bolder;
-}
-
-
-/*intro-sections*/
-
-@media all and (min-width:768px) {
-  #intro-sections section {
+  #services section {
     display: inline-block;
-    width: 33%;
+    width: 32%;
   }
 }
 
-#intro-sections h2 {
+#services section h3 {
   margin-bottom: 10px;
 }
 
-#intro-sections span {
+#services section span {
   display: block;
 }
 
 
 /*design*/
 
-#design {
+
+#design > div {
   font-size: 0px;
 }
 
-#design div {
+#design > div > div {
   display: inline-block;
   max-width: 280px;
   text-align: center;
 }
 
-#design div p {
-  font-size: 15px;
-  text-transform: none;
-  margin-top: 15px;
-  margin-bottom: 4.75px;
+#design > div > div img {
+  width: 100%;
 }
 
-#design div img {
-  width: 100%;
+#design > div > div > a.portfolio-item {
+  display: block;
+  width: fit-content;
+  position: relative;
+  padding-top: 20px;
+}
+
+#design > div > div > a.portfolio-item:before {
+  content: attr(title);
+  position: relative;
+  top: -5px;
+  font-size: 15px;
 }
 
 #design-kuoni-elsewhere {
@@ -245,6 +164,7 @@ main nav a:hover:after, main nav a:focus:after {
 
 /*about*/
 
+
 #about > p:first-of-type {
   clear: right;
 }
@@ -255,16 +175,20 @@ main nav a:hover:after, main nav a:focus:after {
   }
 }
 
-#about-portrait {
-  position: relative;
+img#img-about-portrait {
+  border-radius: 50%;
   float: right;
-  top: -84px;
+  height: 192px;
   margin-bottom: -64px;
   margin-left: 20px;
+  position: relative;
+  top: -84px;
+  width: 192px;
 }
 
 
 /*contact*/
+
 
 #contact {
   margin-bottom: 50vh;

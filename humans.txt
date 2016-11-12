@@ -1,19 +1,19 @@
 /* TEAM */
-	Designer: Vanja Pakaski
-	Twitter: @vanpak
-	Location: Zurich, Switzerland
+  Designer: Vanja Pakaski
+  Twitter: @vanpak
+  Location: Zurich, Switzerland
 
-	Developer: Adam Ralph
-	Twitter: @adamralph
-	Location: Flims, Switzerland
+  Developer: Adam Ralph
+  Twitter: @adamralph
+  Location: Flims, Switzerland
 
 /* THANKS */
-	Text: Martina Caluori
-	Twitter: @MartinaCaluori
-	Location: Zurich, Switzerland
+  Text: Martina Caluori
+  Twitter: @MartinaCaluori
+  Location: Zurich, Switzerland
 
 /* SITE */
-	Last update:2016/11/12
+  Last update:2016/11/12
   Standards: HTML5, CSS3
   Components: Twitter Bootstrap
-	Software: Ruby, Bundler, GitHub Pages, Jekyll, Pesticide, Visual Studio Code
+  Software: Ruby, Bundler, GitHub Pages, Jekyll, Pesticide, Visual Studio Code
