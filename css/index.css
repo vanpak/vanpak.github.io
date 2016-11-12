@@ -101,7 +101,7 @@ main nav a:hover:after, main nav a:focus:after {
   display: none;
 }
 
-#intro-to-go p {
+#intro-sticker  p {
   float: right;
   position: relative;
   top: -202px;
@@ -116,7 +116,7 @@ main nav a:hover:after, main nav a:focus:after {
   text-transform: lowercase;
 }
 
-#intro-to-go p > span {
+#intro-sticker p > span {
   display: block;
   position: relative;
   left: 38px;
@@ -124,22 +124,22 @@ main nav a:hover:after, main nav a:focus:after {
   width: fit-content;
 }
 
-#intro-and {
+#intro-sticker p > span#intro-sticker-layout {
+  top: -9px;
+}
+
+#intro-sticker p > span#intro-sticker-to-go {
+  top: -17px;
+}
+
+#intro-sticker-and {
   font-size: 63px;
   position: relative;
   left: -6px;
   top: 30px;
 }
 
-#intro-to-go #intro-layout {
-  top: -9px;
-}
-
-#intro-to-go #intro-to-go {
-  top: -17px;
-}
-
-#intro-to-go-go {
+#intro-sticker-go {
   font-weight: bolder;
 }
 
