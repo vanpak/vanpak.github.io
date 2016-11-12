@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
-  <link rel="stylesheet" href="/css/default.css" /> {% for css in page.css %}
-  <link rel="stylesheet" href="/css/{{css}}.css" /> {% endfor %}
+  <link rel="stylesheet" href="/css/default.css" /> {% for stylesheet in page.stylesheets %}
+  <link rel="stylesheet" href="{{ stylesheet }}" /> {% endfor %}
   <!--<link rel="stylesheet" href="/css/pesticide.min.css" />-->
   <!--<link rel="stylesheet" href="/css/outline.css" />-->
   <!--<link rel="stylesheet" href="/css/diagnostic.css" />-->
@@ -60,11 +60,11 @@
         <ul>
           {% if page.path == "" %}
           <li class="no-op">
-            <a href="/{{page.root}}" title="Return to the home page">Home</a>
+            <a href="{{page.root}}" title="Return to the home page">Home</a>
           </li>
           {% else %}
           <li>
-            <a href="/{{page.root}}" title="Return to the home page">Home</a>
+            <a href="{{page.root}}" title="Return to the home page">Home</a>
           </li>
           {% endif %}
         </ul>
@@ -72,14 +72,14 @@
       <nav>
         <h2>Language navigation</h2>
         <ul>
-          {% if page.root == "" %}
+          {% if page.lang == "de-CH" %}
           <li class="selected">
             <a class="lang" hreflang="de" href="/{{ page.path }}" title="Deutsch">de</a>
           </li>
           <li>
             <a class="lang" hreflang="en" href="/en/{{ page.path }}" title="English">en</a>
           </li>
-          {% endif %}{% if page.root == "en/" %}
+          {% endif %}{% if page.lang == "en-GB" %}
           <li>
             <a class="lang" hreflang="de" href="/{{ page.path }}" title="Deutsch">de</a>
           </li>

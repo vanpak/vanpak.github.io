@@ -3,12 +3,17 @@ defaults:
     scope:
       path: ""
     values:
+      layout: default
       description: "vanpak – das ist Vanja Pakaski und dein Ort für die unkomplizierte Abwicklung von Deisginaufträgen mit individuellem Service. Effizient, straight to the point, mit Klasse und modern in der Ausführung. Als kreative Grafiknomadin natürlich mit grossem Erfahrungsschatz im Gepäck."
+      root: "/"
+      lang: de-CH
       og-locale: "de_DE"
       og-locale-alternate: "en_GB"
   -
     scope:
       path: "en"
     values:
-      og-locale: "en_DE"
-      og-locale-alternate: "de_CH"
+      root: "/en/"
+      lang: en-GB
+      og-locale: "en_GB"
+      og-locale-alternate: "de_DE"
