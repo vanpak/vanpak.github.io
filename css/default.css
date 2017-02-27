@@ -115,6 +115,7 @@ main nav a:hover:after, main nav a:focus:after {
 }
 
 main p {
+  font-family: 'LinguisticsPro-Italic';
   max-width: 600px;
 }
 
@@ -176,6 +177,7 @@ main dt {
 
 main dd {
   float: left;
+  font-family: 'LinguisticsPro-Italic';
   width: 240px;
 }
 
