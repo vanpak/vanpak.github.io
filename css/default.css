@@ -156,15 +156,14 @@ main h4 {
 
 main dl {
   display: block;
-  width: 320px;
 }
 
-main dl::before {
+main dl::before, main dl div::before {
   content: " ";
   display: table;
 }
 
-main dl::after {
+main dl::after, main dl div::after {
   content: " ";
   clear: both;
   display: table;
@@ -178,10 +177,9 @@ main dt {
 main dd {
   float: left;
   font-family: 'LinguisticsPro-Italic';
-  width: 240px;
 }
 
-main dt:not(:last-of-type), dd:not(:last-of-type) {
+main dt, dd {
   margin-bottom: 16px;
 }
 

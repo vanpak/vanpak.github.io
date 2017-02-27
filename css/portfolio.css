@@ -2,17 +2,9 @@ main > section > section:not(:last-of-type) {
   margin-bottom: 144px;
 }
 
-main section img, main section p, main section dl {
+main section img {
   width: 100%;
   max-width: 280px;
-}
-
-main section dl {
-  width: 280px;
-}
-
-main section dd {
-  width: 200px;
 }
 
 main section img.layout-white {
