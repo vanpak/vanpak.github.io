@@ -1,6 +1,7 @@
 img#img-logo-graphic-and-layout-to-go {
   display: block;
   float: right;
+  margin-bottom: 70px;
   width: 150px;
 }
 
@@ -11,10 +12,7 @@ img#img-logo {
 @media all and (min-width:480px) {
   main nav li {
     display: inline-block;
-    width: 90px;
-  }
-  img#img-logo-graphic-and-layout-to-go {
-    width: 150px;
+    width: 95px;
   }
 }
 
@@ -23,6 +21,7 @@ img#img-logo {
     width: 150px;
   }
   img#img-logo-graphic-and-layout-to-go {
+    margin-bottom: 20px;
     width: 200px;
   }
   img#img-logo {
