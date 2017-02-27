@@ -5,6 +5,15 @@ main > section > section:not(:last-of-type) {
 main section img {
   width: 100%;
   max-width: 280px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+main section img:hover {
+  opacity: 0.4;
 }
 
 main section img.layout-white {
