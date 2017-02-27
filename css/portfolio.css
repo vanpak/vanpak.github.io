@@ -2,9 +2,17 @@ main > section > section:not(:last-of-type) {
   margin-bottom: 144px;
 }
 
-main section img {
+main section img, main section p, main section dl {
   width: 100%;
   max-width: 280px;
+}
+
+main section dl {
+  width: 280px;
+}
+
+main section dd {
+  width: 200px;
 }
 
 main section img.layout-white {
@@ -24,12 +32,11 @@ main section p + a {
 }
 
 a.portofolio-item {
-  display: block;
+  display: inline-block;
   width: fit-content;
   position: relative;
   padding-bottom: 26px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 a.portofolio-item:after {

@@ -155,7 +155,7 @@ main h4 {
 
 main dl {
   display: block;
-  width: 66%;
+  width: 320px;
 }
 
 main dl::before {
@@ -171,12 +171,12 @@ main dl::after {
 
 main dt {
   float: left;
-  width: 20%;
+  width: 80px;
 }
 
 main dd {
   float: left;
-  width: 80%;
+  width: 240px;
 }
 
 main dt:not(:last-of-type), dd:not(:last-of-type) {
