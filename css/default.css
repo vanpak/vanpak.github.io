@@ -17,6 +17,9 @@ body > header {
 body > header .container, body > footer .container {
   color: white;
   background-color: #333;
+}
+
+body > header .container {
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -29,15 +32,15 @@ nav > h2 {
   display: none;
 }
 
-nav#nav-languages {
-  font-size: 14px;
-  float: right;
-}
-
-nav#nav-languages ul {
+nav ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+}
+
+nav#nav-languages {
+  font-size: 14px;
+  float: right;
 }
 
 nav#nav-languages li {
@@ -57,9 +60,32 @@ body > footer {
   font-size: 10px;
 }
 
+body > footer .container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+body > footer ul {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+body > footer ul li {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+body > footer img {
+  width: 30px;
+}
+
 body > footer p#p-copyright {
   float: right;
   margin: 0px;
+  margin-top: 16px;
   width: fit-content;
 }
 
@@ -72,12 +98,6 @@ main nav {
   float: left;
   display: block;
   margin-top: 16px;
-}
-
-main nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 main nav li {
