@@ -58,6 +58,7 @@ nav#nav-languages a > abbr {
 
 body > footer {
   font-size: 10px;
+  text-align: center;
 }
 
 body > footer .container {
@@ -68,7 +69,6 @@ body > footer .container {
 body > footer ul {
   width: 100%;
   display: inline-block;
-  text-align: center;
 }
 
 body > footer ul li {
@@ -83,10 +83,16 @@ body > footer img {
 }
 
 body > footer p#p-copyright {
-  float: right;
   margin: 0px;
   margin-top: 16px;
-  width: fit-content;
+}
+
+@media all and (min-width:991px) {
+  body > footer p#p-copyright {
+    float: right;
+    margin-top: -14px;
+    width: fit-content;
+  }
 }
 
 main > section {
