@@ -9,6 +9,17 @@ img#img-logo {
   width: 192px;
 }
 
+p#new-website {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  /* margin-top: -35px; */
+  margin-bottom: 70px;
+  text-align: center;
+  transform: rotate(-6deg);
+}
+
 @media all and (min-width:480px) {
   main nav li {
     display: inline-block;
