@@ -41,7 +41,7 @@ a.portfolio-item {
 }
 
 a.portfolio-item:after {
-  display: inline-block;
+  display: block;
   content: attr(title);
   position: absolute;
   bottom: 0px;
